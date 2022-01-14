@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Lato&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css"
+        integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Daniel's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Daniel Carmichael</h1>
+        </div>
+        <div class="header-button-group">
+            <button class="header-button" onClick="document.getElementById('my-projects').scrollIntoView();">My
+                Projects
+            </button>
+            <button class="header-button" onClick="document.getElementById('about-me').scrollIntoView();">About Me</button>
+            <p>
+                <label class="btn--blue" for="modal-2">My Resume</label>
+            </p>
+            <p>
+                <label class="btn" for="modal-1"><i class="las la-phone la-3x"></i></label>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="welcome">
+            <div class="typewriter">
+                <h1>Design, Develop, Conquer..</h1>
+            </div>
+            <div class="scroll-message">
+                <span><i class="las la-angle-down"></i> Scroll Down <i class="las la-angle-down"></i></span>
+            </div>
+        </div>
+        <h1 id="my-projects">My Projects</h1>
+        <div id="project-container">
+            <div class="project-wrapper clearfix">
+                <div class="single-project">
+                    <a class="project-link" href="http://wheniselonpooping.com" target="_blank">
+                        <h3>When is Elon Pooping</h3>
+                    </a>
+                    <div class="keyword-container">
+                        <p><span class="keywords">HTML</span> |
+                            <span class="keywords">CSS</span> |
+                            <span class="keywords">JavaScript</span> |
+                            <span class="keywords">REST</span> |
+                            <span class="keywords">Axios</span>
+                        </p>
+                    </div>
+                    <button class="project-button" onclick=" window.open('http://wheniselonpooping.com','_blank')">
+                        Take Me There
+                    </button>
+                    <button class="view-more-button" onclick="showProjectOne()">View More</button>
+                </div>
+                <div class="single-project">
+                    <a class="project-link" href="https://danielfcarmichael.adalo.com/seat-check" target="_blank">
+                        <h3>Seat Check</h3>
+                    </a>
+                    <div class="keyword-container">
+                        <p><span class="keywords">Relational Databases</span> |
+                            <span class="keywords">REST</span> |
+                            <span class="keywords">JavaScript</span>
+                        </p>
+                    </div>
+                    <button class="project-button"
+                        onclick=" window.open('http://danielfcarmichael.adalo.com/seat-check','_blank')">
+                        To Seat Check
+                    </button>
+                    <button class="view-more-button" onclick="showProjectTwo()">View More</button>
+                </div>
+                <div class="single-project">
+                    <a class="project-link" href="#">
+                        <h3>Fake Transaction Generator</h3>
+                    </a>
+                    <div class="keyword-container">
+                        <p><span class="keywords">JavaScript</span> |
+                            <span class="keywords">CSS</span> |
+                            <span class="keywords">Axios</span> |
+                            <span class="keywords">HTML</span>
+                        </p>
+                    </div>
+                    <button class="project-button"
+                        onclick=" window.open('https://github.com/DanielCarmichaelGit/Transaction-Generator','_blank')">
+                        <i class="lab la-github"></i>View on Github
+                    </button>
+                    <button class="view-more-button" onclick="showProjectThree()">View More</button>
+                </div>
+                <div class="single-project">
+                    <a class="project-link" href="http://boydranch.org" target="_blank">
+                        <h3>Boyd Ranch</h3>
+                    </a>
+                    <div class="keyword-container">
+                        <p><span class="keywords">Wordpress</span> |
+                            <span class="keywords">HTML</span> |
+                            <span class="keywords">CSS</span> |
+                            <span class="keywords">REST</span>
+                        </p>
+                    </div>
+                    <button class="project-button" onclick=" window.open('http://wheniselonpooping.com','_blank')">
+                        BoydRanch.org
+                    </button>
+                    <button class="view-more-button" onclick="showProjectFour()">View More</button>
+                </div>
+                <div class="single-project">
+                    <a class="project-link" href="http://wheniselonpooping.com" target="_blank">
+                        <h3>Digital Keyboard</h3>
+                    </a>
+                    <div class="keyword-container">
+                        <p><span class="keywords">HTML</span> |
+                            <span class="keywords">CSS</span> |
+                            <span class="keywords">JavaScript</span>
+                        </p>
+                    </div>
+                    <button class="project-button"
+                        onclick=" window.open('https://github.com/DanielCarmichaelGit/Digital-Keyboard','_blank')">
+                        <i class="lab la-github"></i>View on Github
+                    </button>
+                    <button class="view-more-button" onclick="showProjectFive()">View More</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-info-wrapper">
+            <div id="project-one" class="project-info">
+                <h1>When is Elon Pooping?</h1>
+                <p>The goal of this project is obviously to have some fun. My partner and I wanted to test our abilities
+                    so we decided to focus on the backend
+                    first where we collected over 700 data points. The data was then manipulated and used in graphs to
+                    bettter represent the datapoints to viewers.
+                    All of the data was collected using Twitter API2.
+                </p>
+            </div>
+            <div id="project-two" class="project-info">
+                <h1>Seat Check</h1>
+                <p>Seat Check was created during the creation of the Boyd Ranch website. Initially ticket tailor was
+                    going to be used for processing ticket sales and manaaging event
+                    creations. I designed Seat Check to be able to do all of the things ticket tailor can do but better.
+                    Seat Check has a 'push to squarespace' button that
+                    allows any event created to be instantly pushed as an event right to the desired creator's website.
+                    And, it is absolutely free to use.
+                </p>
+            </div>
+            <div id="project-three" class="project-info">
+                <h1>Fake Transaction Generator</h1>
+                <p>This project was desgned to test my abilities in JavaScript. The process involved calls to an API to
+                    get random user data, then the program generated random transaction costs which fully encompassed
+                    every detail of a modern transaction including; shipping, shipping costs, units purchased, and more.
+                    Each transaction was generated via classes to ensure stable data creation.
+                </p>
+            </div>
+            <div id="project-four" class="project-info">
+                <h1>Boyd Ranch</h1>
+                <p>The modern Boyd Ranch website is still in development. However, I was hired not only to manage the
+                    full production timeline of the new website
+                    but to also maintain the existing worpress site. My role involved managing content creation, web
+                    copy, and communications with other departments to ensure
+                    the new payment integrations with Stripe were correctly set up and to standard.
+                </p>
+            </div>
+            <div id="project-five" class="project-info">
+                <h1>Digital Keyboard</h1>
+                <p>This project was used to test my knowledge of flex displays as well as animations. I wanted something
+                    to challenge myself but also wanted to
+                    create soemthing that could test my abilities to create a beautiful user experience. It is simple
+                    but one of my favorite projects.
+                </p>
+            </div>
+            <div id="project-six" class="project-info">
+
+            </div>
+        </div>
+        
+        
+        <input class="modal-state" id="modal-1" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-1"></label>
+          <div id="contact-modal" class="modal__inner">
+            <label class="modal__close" for="modal-1"></label>
+            <h2>Contact Me</h2>
+            <address>
+                Email Me: <a href="mailto:danielfcarmichael@gmail.com">Daniel Carmichael</a>.<br><br><br>
+                Phone: 231-463-5567
+                Address:<br><br>
+                650 Pine Forest Drive East Lansing<br><br>
+                Michigan 48825
+                </address>
+          </div>
+        </div>
+        
+        <input class="modal-state" id="modal-2" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-2"></label>
+          <div class="modal__inner">
+            <label class="modal__close" for="modal-2"></label>
+            <h2>My Resume</h2>
+            <embed id="resume" src="./assets/pdf/daniels-resume.pdf" width="700px" height="2100px" type="application/pdf" />
+          </div>
+        </div>
+        <div id="about-me">
+            <h1>About Me</h1>
+            <img id="me" src="./assets/images/me.png" alt="a picture of daniel carmichael">
+            <p>I am a lifelong learner. Everything I do from the moment I wake up involves learning. I listen to 3 podcasts a day, write code endlessly, and expand on my 
+                knowledge base. I enjoy working on my 1979 MG Midget as well as building cool little programs that test my skills.
+            </p>
+            <p>
+                <label class="btn" for="modal-1"><i class="las la-phone"></i> Contact Me</label>
+            </p>
+        </div>
+    </main>
+</body>
+<script src="./JavaScript/reveal.js"></script>
+
+</html>
